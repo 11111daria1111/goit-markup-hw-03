@@ -1,11 +1,10 @@
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-gray-color: #f5f4fa;
-  --background-black-color:#2f303a;
+  --background-black-color: #2f303a;
   --logo-color: #000000;
 }
 /*Утилиты*/
@@ -37,7 +36,6 @@ img {
   padding-right: 15px;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -45,12 +43,12 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 .list {
   list-style: none;
@@ -65,6 +63,8 @@ img {
 /* header*/
 
 .page-header {
+  margin-bottom: 20px;
+
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
@@ -118,12 +118,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
-  
 }
 
 .contacts {
   display: flex;
   margin-left: auto;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .item + .item {
@@ -143,29 +145,54 @@ img {
 /* hero */
 
 .hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
-  letter-spacing: 0.06em;
-  background-color: var(--background-black-color)
+  color: var(--primary-white-color);
+  background-color: var(--background-black-color);
+  /*letter-spacing: 0.06em;*/
 }
 
 .hero-title {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
-  color: var(--primary-white-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 .button {
+  /*display: block;
+  align-items: center;
+  text-align: center;*/
+
   background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  color: inherit;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
+  letter-spacing: 0.06em;
+
   cursor: pointer;
+
+  border-radius: 4px;
+  border: solid 0px transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
 }
 
 /*section*/
@@ -239,7 +266,7 @@ img {
 /* footer*/
 
 .footer {
-  background-color: var(--background-black-color)
+  background-color: var(--background-black-color);
 }
 .address {
   font-style: normal;
@@ -254,9 +281,8 @@ img {
   margin-bottom: 0;
 }
 
-
 .address-text .link:hover,
-.address-text .link:focus{
+.address-text .link:focus {
   color: var(--accent-color);
 }
 
@@ -321,6 +347,3 @@ img {
 .card-content {
   padding: 20px 24px;
 }
-
-
-
