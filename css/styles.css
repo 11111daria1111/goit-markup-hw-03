@@ -294,6 +294,7 @@ img {
 .logo-footer {
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  padding: 0;
 }
 
 .footer {
