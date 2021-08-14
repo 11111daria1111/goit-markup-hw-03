@@ -8,6 +8,7 @@
   --logo-color: #000000;
 }
 /*Утилиты*/
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -58,6 +59,12 @@ img {
 
 .link {
   text-decoration: none;
+  display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* header*/
@@ -72,6 +79,9 @@ img {
 
 /* logo */
 .logo {
+  display: block;
+  padding: 24px 0;
+
   color: var(--logo-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -182,16 +192,9 @@ img {
   padding: 10px 32px;
 }
 
-/*section*/
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* Features*/
 .features {
-  padding-bottom: 0;
+  padding-bottom: 47px;
 }
 
 .section-title {
@@ -236,6 +239,9 @@ img {
 }
 
 /* example*/
+.works {
+  padding-top: 47px;
+}
 
 .works-list {
   display: flex;
@@ -280,6 +286,8 @@ img {
 .team-cards {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 /* footer*/
 
@@ -307,8 +315,8 @@ img {
   color: var(--primary-white-color);
 }
 
-.address-text .footer-contacts + .footer-contacts {
-  margin-top: 9px;
+.footer-contacts:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-text .link:hover,
@@ -343,8 +351,9 @@ img {
   cursor: pointer;
 }
 
-.btn-portfolio:hover,
-.btn-portfolio:focus {
+.filters .current,
+.filters .btn-portfolio:hover,
+.filters .btn-portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -371,6 +380,8 @@ img {
 }
 
 .portfolio .portfolio-title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -378,8 +389,6 @@ img {
 }
 
 .portfolio .portfolio-text {
-  margin-top: 4px;
-
   font-size: 16px;
   line-height: 1.87;
 }
